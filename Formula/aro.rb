@@ -9,6 +9,8 @@ class Aro < Formula
   # Only support macOS for now (ARM64 binary)
   depends_on :macos
   depends_on arch: :arm64
+  depends_on "llvm@20"
+  depends_on "libgit2"
 
   def install
     bin.install "aro"
