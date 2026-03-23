@@ -1,9 +1,9 @@
 class Aro < Formula
   desc "ARO programming language - Natural language DSL for business logic"
   homepage "https://github.com/arolang/aro"
-  url "https://github.com/arolang/aro/releases/download/0.7.3-beta.28/aro-macos-arm64.tar.gz"
-  sha256 "e1af79169edfe0c2bc6b327198c83580f3a241c518fbba3ab093194dd72c5780"
-  version "0.7.3-beta.28"
+  url "https://github.com/arolang/aro/releases/download/0.7.4-beta.29/aro-macos-arm64.tar.gz"
+  sha256 "7a018d9687764edcd508f59399fb1d12a6714187c6b474028f2b057433378030"
+  version "0.7.4-beta.29"
   license "MIT"
 
   # Only support macOS for now (ARM64 binary)
