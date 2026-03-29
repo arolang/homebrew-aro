@@ -9,7 +9,7 @@ ARO is a domain-specific language for expressing business logic using natural la
 ## Installation
 
 ```bash
-brew tap krissimon/aro
+brew tap arolang/aro
 brew install aro
 ```
 
