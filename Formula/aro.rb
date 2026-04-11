@@ -1,14 +1,16 @@
 class Aro < Formula
   desc "ARO programming language - Natural language DSL for business logic"
   homepage "https://github.com/arolang/aro"
-  url "https://github.com/arolang/aro/releases/download/0.8.2/aro-macos-arm64.tar.gz"
-  sha256 "f834fe9553bb0a63cd96369842ba26bef919e0574e7e2bc227dc34e2d5616085"
-  version "0.8.2"
+  url "https://github.com/arolang/aro/releases/download/0.8.3/aro-macos-arm64.tar.gz"
+  sha256 "31c42cad7dbe37aefa61574da77b649b2bb35329c8e3c6b31ce910acde690208"
+  version "0.8.3"
   license "MIT"
 
   # Only support macOS for now (ARM64 binary)
   depends_on :macos
   depends_on arch: :arm64
+  depends_on "libgit2"
+  depends_on "llvm@20"
 
   def install
     bin.install "aro"
