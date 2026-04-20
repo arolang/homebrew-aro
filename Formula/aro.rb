@@ -17,6 +17,20 @@ class Aro < Formula
     lib.install "libARORuntime.a"
   end
 
+  def caveats
+    <<~EOS
+      LLVM tools (llc, llvm-objcopy) are required for `aro build` and are
+      provided by the llvm@20 dependency. They are installed at:
+        #{Formula["llvm@20"].opt_prefix}/bin/
+
+      For building Swift plugins, Xcode Command Line Tools must be installed:
+        xcode-select --install
+
+      For building Rust plugins, install Rust via rustup:
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    EOS
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/aro --version")
   end
