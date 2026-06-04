@@ -10,14 +10,24 @@ ARO is a domain-specific language for expressing business logic using natural la
 
 ```bash
 brew tap arolang/aro
-brew install aro
 ```
 
-Verify installation:
+### Command-line compiler / runtime
 
 ```bash
+brew install aro
 aro --version
 ```
+
+### Desktop IDE (Solaro)
+
+```bash
+brew install solaro     # or: brew install --cask solaro
+```
+
+This drops `Solaro.app` into `/Applications`. Launch it from
+Spotlight, the Dock, or via the bundled `solaro` CLI shim if you
+also installed `aro`.
 
 ## Quick Start
 
@@ -36,9 +46,10 @@ Run it:
 aro run hello.aro
 ```
 
-## Formulae
+## Formulae & Casks
 
-- **aro** - ARO language compiler and runtime (v0.1.0-alpha.2)
+- **aro** *(formula)* — ARO language compiler and runtime CLI.
+- **solaro** *(cask)* — Solaro desktop IDE (canvas-first editor for ARO).
 
 ## Requirements
 
@@ -58,6 +69,7 @@ To update to the latest version:
 ```bash
 brew update
 brew upgrade aro
+brew upgrade --cask solaro
 ```
 
 ## Support
