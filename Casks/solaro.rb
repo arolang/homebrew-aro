@@ -1,17 +1,12 @@
 cask "solaro" do
-  # Pin to the latest aro release that publishes
-  # `solaro-macos-arm64.dmg`. The CI workflow
-  # (.github/workflows/build.yml in arolang/aro) attaches that file
-  # to every tagged release; older tags pre-date the SOLARO build
-  # step and won't resolve.
-  version "0.10.6"
-  # TODO: replace with the real shasum once a release with the
-  # solaro DMG is published — `shasum -a 256 solaro-macos-arm64.dmg`.
-  # `:no_check` keeps `brew install solaro` working in the meantime
-  # so the install target exists for the docs.
-  sha256 :no_check
+  # Managed by the release workflow in arolang/aro
+  # (.github/workflows/build.yml, "Update Homebrew Cask"). Edit
+  # there, not here — this file is overwritten on every release
+  # that ships solaro-macos-arm64.dmg.
+  version "0.10.8"
+  sha256 "eb457b9e952e85aa6db509d8cd1fd98759b8dbbb429295878610c21c316a4017"
 
-  url "https://github.com/arolang/aro/releases/download/#{version}/solaro-macos-arm64.dmg"
+  url "https://github.com/arolang/aro/releases/download/0.10.8/solaro-macos-arm64.dmg"
   name "Solaro"
   desc "Canvas-first IDE for the ARO language"
   homepage "https://github.com/arolang/aro"
