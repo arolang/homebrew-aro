@@ -3,10 +3,10 @@ cask "solaro" do
   # (.github/workflows/build.yml, "Update Homebrew Cask"). Edit
   # there, not here — this file is overwritten on every release
   # that ships solaro-macos-arm64.dmg.
-  version "0.11.5"
-  sha256 "5be1fe91be72e53047259eb16da6561cad65fa2e106ef5672037c9b46660be5f"
+  version "0.11.6"
+  sha256 "0d1f6bda922a482aec0ffa353c35235cd12a748501bab55a6d36b90d0edc17e6"
 
-  url "https://github.com/arolang/aro/releases/download/0.11.5/solaro-macos-arm64.dmg"
+  url "https://github.com/arolang/aro/releases/download/0.11.6/solaro-macos-arm64.dmg"
   name "Solaro"
   desc "Canvas-first IDE for the ARO language"
   homepage "https://github.com/arolang/aro"
